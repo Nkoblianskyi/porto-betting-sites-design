@@ -1,0 +1,142 @@
+import type { BettingSite, HorizontalBanner } from "../types"
+
+export const bettingSites: BettingSite[] = [
+  {
+    id: 1,
+    name: "Boomerang Bet",
+    logo: "/boomerang-2.png",
+    rating: 9.8,
+    bonus: "Bónus de Primeiro Depósito 100%",
+    description: "Plataforma de apostas inovadora",
+    features: ["Streaming ao Vivo", "Estatísticas", "Cash Out"],
+    welcomeOffer: "Até 100€",
+    terms:
+      "18+ | Apenas novos clientes portugueses | Máx 100€ de bónus | Depósito mín 10€ | Odds mín 1,70 | Aposta do bónus não devolvida | Alguns mercados/desportos/métodos de pagamento excluídos | Bónus para apostar 5x | Bónus válido 30 dias | Termos e condições aplicam-se",
+    userRating: 9.8,
+    votes: 31245,
+    link: "https://boomerang-bet0101.com/pt/sport",
+    backgroundImage: "/banner-3.jpg",
+  },
+  {
+    id: 2,
+    name: "Lamabet",
+    logo: "/lamabet.svg",
+    rating: 9.7,
+    bonus: "Aposta Grátis 10%",
+    description: "Site de apostas premium",
+    features: ["Odds Competitivas", "Cash Out", "Bet Builder"],
+    welcomeOffer: "Até 100€",
+    terms:
+      "18+ Registe-se & deposite 10€+ e aposte em qualquer mercado (odds 2,00+). Sem cashout. Obtenha até 100€ em aposta grátis para mercados específicos, expiração 7 dias. Oferta válida até 31.12.25. Termos e condições aplicam-se.",
+    userRating: 9.7,
+    votes: 28934,
+    link: "https://bet.lamabet1.com/pt/promotions",
+    backgroundImage: "/banner-10.jpg",
+  },
+  {
+    id: 3,
+    name: "Winrolla",
+    logo: "/win-rolla.webp",
+    rating: 9.6,
+    bonus: "Bónus de Primeiro Depósito 100%",
+    description: "Experiência de apostas premium",
+    features: ["Interface Moderna", "Suporte VIP", "Levantamentos Rápidos"],
+    welcomeOffer: "Até 500€",
+    terms:
+      "Aposte 10€ no total em apostas pré-jogo com odds mín 2,0 para qualificar. Obtenha 500€ creditados como bónus. Condições aplicam-se. Bónus para apostar 3x antes do levantamento.",
+    userRating: 9.6,
+    votes: 27156,
+    link: "https://winrolla1.com/pt/",
+    backgroundImage: "/banner-3.jpg",
+  },
+  {
+    id: 4,
+    name: "BillyBets",
+    logo: "/billybets.webp",
+    rating: 9.5,
+    bonus: "Bónus de Primeiro Depósito 100%",
+    description: "Apostas desportivas modernas",
+    features: ["App Móvel", "Apostas ao Vivo", "Suporte Local"],
+    welcomeOffer: "Até 100€",
+    terms:
+      "Apenas novos clientes: Deposite 10€+ e faça uma aposta de 10€+ com odds 2,0+ para receber 100€ em bónus (válido 7 dias). Exclui alguns métodos de pagamento. Portugal online apenas, 18+. Condições aplicam-se.",
+    userRating: 9.5,
+    votes: 25789,
+    link: "https://billybets.com/",
+    backgroundImage: "/banner-6.jpg",
+  },
+  {
+    id: 5,
+    name: "BetiBet",
+    logo: "/betibet.png",
+    rating: 9.4,
+    bonus: "Bónus de Primeiro Depósito 100%",
+    description: "Plataforma de apostas confiável",
+    features: ["Levantamentos Rápidos", "Melhores Odds", "Interface Simples"],
+    welcomeOffer: "Até 100€",
+    terms:
+      "Apenas novos clientes. Registe-se, deposite com Cartão de Débito, e faça a primeira aposta 10€+ com odds iguais (2,0)+ em Desporto nos 7 dias para obter 100€ em bónus nas 10 horas após liquidação. Expiração 7 dias. Condições aplicam-se.",
+    userRating: 9.4,
+    votes: 24567,
+    link: "https://betibet.com/",
+    backgroundImage: "banner-3.jpg",
+  },
+  
+]
+
+export const horizontalBanners: HorizontalBanner[] = [
+  {
+    id: 1,
+    name: "Boomerang Bet",
+    logo: "/boomerang-bet.png",
+    bonus: "Bónus de Primeiro Depósito 100%",
+    welcomeOffer: "Até 100€",
+    link: "https://boomerang-bet0101.com/pt/sport",
+    backgroundImage: "/banner-hor.jpg",
+  },
+  {
+    id: 2,
+    name: "Lamabet",
+    logo: "/lamabet.png",
+    bonus: "Aposta Grátis 10%",
+    welcomeOffer: "Até 100€",
+    link: "https://bet.lamabet1.com/pt/promotions",
+    backgroundImage: "/banner-hor.jpg",
+  },
+  {
+    id: 3,
+    name: "Winrolla",
+    logo: "/winrolla.png",
+    bonus: "Bónus de Primeiro Depósito 100%",
+    welcomeOffer: "Até 500€",
+    link: "https://winrolla1.com/pt/",
+    backgroundImage: "/banner-hor.jpg",
+  },
+]
+
+export const verticalSidebarBanners = [
+  {
+    id: 1,
+    name: "Boomerang Bet",
+    logo: "/boomerang-bet.webp",
+    welcomeOffer: "Até 100€",
+    link: "https://boomerang-bet0101.com/pt/sport",
+    backgroundImage: "/sidebar-vertical-bg.jpg",
+  },
+  {
+    id: 2,
+    name: "Lamabet",
+    logo: "/lamabet.webp",
+    welcomeOffer: "Até 100€",
+    link: "https://bet.lamabet1.com/pt/promotions",
+    backgroundImage: "/sidebar-vertical-bg.jpg",
+  },
+  {
+    id: 3,
+    name: "Winrolla",
+    logo: "/winrolla.webp",
+    welcomeOffer: "Até 500€",
+    link: "https://winrolla1.com/pt/",
+    backgroundImage: "/sidebar-vertical-bg.jpg",
+  },
+]
