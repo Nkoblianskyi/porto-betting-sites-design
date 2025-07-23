@@ -142,13 +142,29 @@ export function MainSiteFooter() {
               href="https://www.sicad.pt"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-transparent hover:bg-tech-white/10 border border-tech-gold/30 rounded-xl p-4 flex items-center justify-center transition-all duration-300 hover:border-tech-gold hover:scale-105 group"
+              className="bg-white hover:bg-tech-white/10 border border-tech-gold/30 rounded-xl p-4 flex items-center justify-center transition-all duration-300 hover:border-tech-gold hover:scale-105 group"
             >
               <img
                 src="/icad.png"
                 alt="SICAD"
                 className="h-8 md:h-10 w-auto object-contain filter brightness-90 group-hover:brightness-110"
               />
+            </Link>
+            <Link
+              href="https://www.gamcare.org.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white hover:bg-gray-600 border border-gray-500 rounded-xl p-4 flex items-center justify-center transition-all duration-300 hover:border-yellow-400 hover:scale-105"
+            >
+              <img src="/gamecare.svg" alt="GamCare" className="h-8 md:h-10 w-auto object-contain" />
+            </Link>
+            <Link
+              href="https://www.gambleaware.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white hover:bg-gray-600 border border-gray-500 rounded-xl p-4 flex items-center justify-center transition-all duration-300 hover:border-yellow-400 hover:scale-105"
+            >
+              <img src="/gamble.webp" alt="GambleAware" className="h-8 md:h-10 w-auto object-contain" />
             </Link>
             <Link
               href="https://www.jogoresponsavel.pt"
@@ -161,22 +177,6 @@ export function MainSiteFooter() {
                 alt="Jogo Responsável"
                 className="h-8 md:h-10 w-auto object-contain filter brightness-90 group-hover:brightness-110"
               />
-            </Link>
-            <Link
-              href="https://www.gamcare.org.uk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-transparent hover:bg-gray-600 border border-gray-500 rounded-xl p-4 flex items-center justify-center transition-all duration-300 hover:border-yellow-400 hover:scale-105"
-            >
-              <img src="/gamecare.svg" alt="GamCare" className="h-8 md:h-10 w-auto object-contain" />
-            </Link>
-            <Link
-              href="https://www.gambleaware.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-transparent hover:bg-gray-600 border border-gray-500 rounded-xl p-4 flex items-center justify-center transition-all duration-300 hover:border-yellow-400 hover:scale-105"
-            >
-              <img src="/gamble.webp" alt="GambleAware" className="h-8 md:h-10 w-auto object-contain" />
             </Link>
           </div>
         </div>
