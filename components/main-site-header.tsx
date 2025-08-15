@@ -10,7 +10,7 @@ export function MainSiteHeader() {
           <div className="absolute left-0 top-0 bottom-0 w-1 bg-tech-gold"></div>
           <Link href="/" className="flex items-center gap-2">
             <div className="w-10 h-10 bg-tech-gold border border-tech-black flex items-center justify-center relative">
-              <Image src="/logo.png" alt="Logo" width={30} height={30} className="w-5 h-5" />
+              <Image src="/logo.png" alt="Logo" width={40} height={40} className="w-8 h-8" />
               <div className="absolute -top-1 -right-1 w-2 h-2 bg-portuguese-red"></div>
             </div>
             <div className="text-center">
