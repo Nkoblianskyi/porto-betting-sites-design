@@ -17,7 +17,7 @@ export const bettingSites: BettingSite[] = [
     name: "Boomerang",
     logo: "/boomerang-bet.svg",
     rating: 9.8,
-    bonus: "De Primeiro Depósito 100% Até 100€",
+    bonus: "De Primeiro Depósito 100%  Até 100€",
     description: "Danmarks førende betting platform",
     features: ["Live Streaming", "Statistikker", "Cash Out"],
     welcomeOffer: " + CashBack 10% Até 500€",

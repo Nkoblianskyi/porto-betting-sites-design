@@ -51,7 +51,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
           {/* Main Content */}
           <div className="h-40 flex items-center py-6 px-6 bg-tech-white relative">
             {/* PLATFORM - 30% */}
-            <div className="flex-[0_0_30%] pr-2 flex justify-center items-center h-full relative z-10">
+            <div className="flex-[0_0_28%] pr-8 flex justify-center items-center h-full relative z-10">
               <div className="bg-black border-2 border-tech-black p-4 shadow-tech-medium relative mt-4">
                 <img
                   src={site.logo || "/placeholder.svg"}
@@ -80,16 +80,16 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
             </div>
 
             {/* WELCOME PACKAGE - 25% */}
-            <div className="flex-[0_0_25%] px-2 text-center flex flex-col justify-center h-full relative z-10">
+            <div className="flex-[0_0_34%] px-2 text-center flex flex-col justify-center h-full relative z-10">
               <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">
                 BÓNUS BOAS-VINDAS
               </div>
-              <div className="text-lg xl:text-xl font-bold text-tech-black mb-1 tech-heading">{site.bonus}</div>
-              <div className="text-lg xl:text-xl font-bold text-tech-black tech-heading">{site.welcomeOffer}</div>
+              <div className="text-base xl:text-lg font-bold text-tech-black mb-1 tech-heading">{site.bonus}</div>
+              <div className="text-base xl:text-lg font-bold text-tech-black tech-heading">{site.welcomeOffer}</div>
             </div>
 
             {/* RATING - 12% */}
-            <div className="flex-[0_0_12%] px-2 text-center flex flex-col justify-center h-full relative z-10">
+            <div className="flex-[0_0_10%] px-2 text-center flex flex-col justify-center h-full relative z-10">
               <div
                 className="text-4xl xl:text-5xl font-bold leading-none mb-1 tech-heading"
                 style={{ color: "#FF0000" }}
@@ -100,7 +100,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
             </div>
 
             {/* USER SCORE - 20% */}
-            <div className="flex-[0_0_20%] px-2 text-center flex flex-col justify-center h-full relative z-10">
+            <div className="flex-[0_0_15%] px-2 text-center flex flex-col justify-center h-full relative z-10">
               <div className="text-xs text-tech-gray-600 mb-2 tech-subheading">
                 ({formatVotes(site.votes)} AVALIAÇÕES)
               </div>
@@ -113,7 +113,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
             </div>
 
             {/* ACCESS - 13% */}
-            <div className="flex-[0_0_13%] pl-2 text-center flex flex-col justify-center items-center h-full relative z-10">
+            <div className="flex-[0_0_12%] pl-2 text-center flex flex-col justify-center items-center h-full relative z-10">
               <div className="w-full">
                 <Button className="bg-portuguese-green hover:bg-green-700 text-white border-2 border-portuguese-green w-full h-12 mb-2 text-sm font-bold tech-subheading shadow-lg">
                   OBTER BÓNUS
@@ -253,7 +253,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
               {/* Logo Column */}
               <div className="flex justify-center">
                 <div className="bg-black border-2 border-tech-black p-2 shadow-tech-soft relative">
-                  <img src={site.logo || "/placeholder.svg"} alt={site.name} className="h-16 w-auto object-contain" />
+                  <img src={site.logo || "/placeholder.svg"} alt={site.name} className="h-14 w-auto object-contain" />
                   <div className="absolute -top-1 -left-1 w-1 h-1" style={{ backgroundColor: "#FF0000" }}></div>
                   <div className="absolute -bottom-1 -right-1 w-1 h-1" style={{ backgroundColor: "#FF0000" }}></div>
                 </div>
@@ -262,8 +262,8 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
               {/* Bonus Column */}
               <div className="text-center">
                 <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">BÓNUS BOAS-VINDAS</div>
-                <div className="text-lg font-bold text-tech-black leading-tight mb-1 tech-heading">{site.bonus}</div>
-                <div className="text-lg font-bold text-tech-black leading-tight tech-heading">{site.welcomeOffer}</div>
+                <div className="text-base font-bold text-tech-black leading-tight mb-1 tech-heading">{site.bonus}</div>
+                <div className="text-base font-bold text-tech-black leading-tight tech-heading">{site.welcomeOffer}</div>
               </div>
             </div>
 
