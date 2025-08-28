@@ -29,7 +29,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
   const getRankLabel = (rank: number) => {
     switch (rank) {
       case 1:
-        return "TOP BOOKMAKER"
+        return "MELHOR CASA DE APOSTAS"
       case 2:
         return "OFERTA EXCLUSIVA"
       case 3:
@@ -52,7 +52,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
           <div className="h-40 flex items-center py-6 px-6 bg-tech-white relative">
             {/* PLATFORM - 30% */}
             <div className="flex-[0_0_30%] pr-2 flex justify-center items-center h-full relative z-10">
-              <div className="bg-tech-white border-2 border-tech-black p-4 shadow-tech-medium relative mt-4">
+              <div className="bg-black border-2 border-tech-black p-4 shadow-tech-medium relative mt-4">
                 <img
                   src={site.logo || "/placeholder.svg"}
                   alt={site.name}

@@ -68,7 +68,7 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
           </div>
 
           {/* Logo section */}
-          <div className="bg-tech-gray-100 h-28 flex items-center justify-center p-4 border-b-2 border-tech-black flex-shrink-0 relative">
+          <div className="bg-black h-28 flex items-center justify-center p-4 border-b-2 border-tech-black flex-shrink-0 relative">
             <img
               src={topSite.logo || "/placeholder.svg"}
               alt={topSite.name || "Site"}

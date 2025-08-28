@@ -96,7 +96,7 @@ export function TopSitesModal({ bettingSites, casinoSites }: Top3ModalProps) {
                 } bg-tech-white rounded-lg`}
               >
                 {/* Logo section */}
-                <div className="bg-tech-gray-50 h-16 md:h-20 flex items-center justify-center p-3 md:p-4 border-b-2 border-tech-gray-200 flex-shrink-0">
+                <div className="bg-black h-16 md:h-20 flex items-center justify-center p-3 md:p-4 border-b-2 border-tech-gray-200 flex-shrink-0">
                   <img
                     src={site?.logo || "/placeholder.svg"}
                     alt={site?.name || "Site"}

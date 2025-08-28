@@ -43,7 +43,7 @@ export function OurFavoriteSection() {
           <div className="h-40 flex items-center py-6 px-6 bg-tech-white relative">
             {/* PLATFORM - 30% */}
             <div className="flex-[0_0_30%] pr-2 flex justify-center items-center h-full relative z-10">
-              <div className="bg-tech-white border-2 border-tech-black p-4 shadow-tech-medium relative mt-4">
+              <div className="bg-black border-2 border-tech-black p-4 shadow-tech-medium relative mt-4">
                 <img
                   src={favoriteSite.logo || "/placeholder.svg"}
                   alt={favoriteSite.name}
