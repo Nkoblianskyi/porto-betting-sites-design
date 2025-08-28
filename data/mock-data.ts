@@ -77,7 +77,7 @@ export const bettingSites: BettingSite[] = [
     name: "Mr.Pacho",
     logo: "/mrpacho.svg",
     rating: 9.3,
-    bonus: "De Primeiro Depósito 100% Até 100€",
+    bonus: "De Primeiro Depósito 100% + Até 100€",
     description: "Innovative betting platform",
     features: ["Modern Design", "Quick Deposits", "Mobile Optimized"],
     welcomeOffer: "",
