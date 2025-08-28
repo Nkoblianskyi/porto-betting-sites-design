@@ -49,9 +49,9 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
       >
         <Link href={site.link} target="_blank" rel="noopener noreferrer" className="block">
           {/* Main Content */}
-          <div className="h-40 flex items-center py-6 px-6 bg-tech-white relative">
+          <div className="h-40 flex items-center py-6 pr-6 bg-tech-white relative">
             {/* PLATFORM - 30% */}
-            <div className="flex-[0_0_28%] pr-8 flex justify-center items-center h-full relative z-10">
+            <div className="flex-[0_0_22%]  flex justify-center items-center h-full relative z-10">
               <div className="bg-black border-2 border-tech-black p-4 shadow-tech-medium relative mt-4">
                 <img
                   src={site.logo || "/placeholder.svg"}
@@ -80,7 +80,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
             </div>
 
             {/* WELCOME PACKAGE - 25% */}
-            <div className="flex-[0_0_34%] px-2 text-center flex flex-col justify-center h-full relative z-10">
+            <div className="flex-[0_0_40%] px-2 text-center flex flex-col justify-center h-full w-full relative z-10">
               <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">
                 BÓNUS BOAS-VINDAS
               </div>
