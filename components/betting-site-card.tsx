@@ -88,8 +88,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
             {/* RATING - 12% */}
             <div className="flex-[0_0_10%] px-2 text-center flex flex-col justify-center h-full relative z-10">
               <div
-                className="text-4xl xl:text-5xl font-bold leading-none mb-1 tech-heading"
-                style={{ color: "#FF0000" }}
+                className="text-4xl xl:text-5xl font-bold leading-none mb-1 tech-heading text-portuguese-green "
               >
                 {site.rating.toFixed(1)}
               </div>
@@ -103,7 +102,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
               </div>
               <div className="flex justify-center gap-1 mb-2">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 xl:w-5 h-4 xl:h-5 fill-current" style={{ color: "#FF0000" }} />
+                  <Star key={i} className="w-4 xl:w-5 h-4 xl:h-5 fill-current text-yellow-400" />
                 ))}
               </div>
               <div className="text-sm text-tech-black font-bold tech-subheading">EXCELENTE</div>
@@ -174,7 +173,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
 
               {/* Score - 2 колонки */}
               <div className="col-span-2 text-center">
-                <div className="text-xl font-bold leading-none tech-heading" style={{ color: "#FF0000" }}>
+                <div className="text-xl font-bold leading-none tech-heading text-portuguese-green">
                   {site.rating.toFixed(1)}
                 </div>
                 <div className="text-xs font-bold text-tech-gray-600 tech-subheading">SCORE</div>
@@ -185,7 +184,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
                 <div className="text-xs text-tech-gray-600 mb-1 tech-subheading">({formatVotes(site.votes)})</div>
                 <div className="flex justify-center gap-0.5 mb-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 fill-current" style={{ color: "#FF0000" }} />
+                    <Star key={i} className="w-3 h-3 fill-current text-yellow-400 " />
                   ))}
                 </div>
               </div>
@@ -255,7 +254,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
             {/* Rating Row */}
             <div className="grid grid-cols-3 items-center justify-center gap-1 mt-1 pt-1 border-t-2 border-tech-gray-200 relative z-10">
               <div className="text-center">
-                <div className="text-xl font-bold leading-none mb-1 mt-1.5 tech-heading" style={{ color: "#FF0000" }}>
+                <div className="text-xl font-bold leading-none mb-1 mt-1.5 tech-heading text-portuguese-green">
                   {site.rating.toFixed(1)}
                 </div>
                 <div className="text-[8px] text-tech-gray-600 font-bold tech-subheading">SCORE</div>
@@ -263,7 +262,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
               <div className="text-center">
                 <div className="flex justify-center gap-0.5 mt-2 mb-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-current" style={{ color: "#FF0000" }} />
+                    <Star key={i} className="w-4 h-4 fill-current text-yellow-400" />
                   ))}
                 </div>
                 <div className="text-[10px] text-tech-gray-600 font-bold tech-subheading">

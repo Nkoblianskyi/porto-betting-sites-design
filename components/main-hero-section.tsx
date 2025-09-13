@@ -85,8 +85,12 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
       </div>
 
       {/* Tablet & Mobile Hero */}
-      <div className="lg:hidden mb-2">
-        <div className="bg-white/70 shadow-lg max-w-[1150px] mx-auto rounded-lg">
+      <div className="lg:hidden mb-2"
+      style={
+        { backgroundImage: 'url("/bg-2.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }
+      }
+      >
+        <div className="bg-white/60 shadow-lg max-w-[1150px] mx-auto rounded-lg">
           <div className="px-4 py-4 text-center">
             <h1 className="text-xl md:text-2xl font-bold mb-2 text-portuguese-red uppercase">
               Melhores <span className="text-portuguese-green">Sites de Apostas</span> Portugueses

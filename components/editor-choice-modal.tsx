@@ -52,10 +52,8 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
                 <Award className="w-5 h-5" />
               </div>
               {/* Corner accents */}
-              <div className="absolute -top-1 -left-1 w-3 h-3 bg-portuguese-red"></div>
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-portuguese-red"></div>
               <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-tech-white"></div>
-              <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-tech-white"></div>
             </div>
           </div>
         </div>
@@ -74,21 +72,16 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
               alt={topSite.name || "Site"}
               className="h-24 w-auto object-contain"
             />
-            {/* Corner flags */}
-            <div className="absolute -top-1 -left-1 w-2 h-2 bg-portuguese-red"></div>
-            <div className="absolute -top-1 -right-1 w-2 h-2 bg-portuguese-red"></div>
           </div>
 
           {/* Content */}
           <div className="bg-tech-white text-tech-black flex-1 flex flex-col p-4 text-center justify-between min-h-0 relative">
-            {/* Corner accents */}
-            <div className="absolute top-0 right-0 w-2 h-2 bg-tech-gold"></div>
-            <div className="absolute bottom-0 left-0 w-2 h-2 bg-tech-gold"></div>
+
 
             {/* Rating Stars */}
             <div className="flex justify-center gap-1 mb-4">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-current text-portuguese-red" />
+                <Star key={i} className="w-5 h-5 fill-current text-yellow-400" />
               ))}
             </div>
 
@@ -105,7 +98,7 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
 
             {/* Rating Score */}
             <div className="mb-6">
-              <span className="font-bold tech-subheading text-lg text-portuguese-red">
+              <span className="font-bold tech-subheading text-lg text-green-700">
                 {topSite.rating.toFixed(1)}/10
               </span>
             </div>
@@ -127,11 +120,7 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
         {/* Footer */}
         <div className="text-center mt-6 px-2 flex-shrink-0">
           <div className="bg-tech-white/95 backdrop-blur-sm border-2 border-tech-gold p-3 relative shadow-tech-strong">
-            {/* Corner accents */}
-            <div className="absolute -top-1 -left-1 w-2 h-2 bg-portuguese-red"></div>
-            <div className="absolute -top-1 -right-1 w-2 h-2 bg-portuguese-red"></div>
-            <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-tech-gold"></div>
-            <div className="absolute -bottom-1 -right-1 w-2 h-2 bg-tech-gold"></div>
+
 
             <p className="text-tech-black text-xs font-bold mb-1 tech-subheading">
               18+ Apenas | srij.turismodeportugal.pt
