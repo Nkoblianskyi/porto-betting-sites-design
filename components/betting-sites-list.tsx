@@ -1,8 +1,9 @@
 "use client"
 
+import { bettingSites } from "@/data/mock-data"
+import { BettingSite } from "@/types"
 import { BettingSiteCard } from "./betting-site-card"
-import { bettingSites } from "../data/mock-data"
-import type { BettingSite } from "../types"
+
 
 export function BettingSitesList() {
   return (
@@ -15,3 +16,4 @@ export function BettingSitesList() {
     </div>
   )
 }
+

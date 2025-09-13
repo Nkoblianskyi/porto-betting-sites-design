@@ -40,14 +40,19 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
               {/* Main Heading */}
               <div className="mb-6">
                 <h1 className="text-2xl xl:text-3xl font-bold mb-3 leading-tight text-portuguese-red uppercase">
-                  Melhores <span className="text-portuguese-green">Sites de Apostas</span> Portugueses 2025
+                  Melhores <span className="text-portuguese-green">Sites de Apostas</span> Portugueses
                 </h1>
 
-                <h2 className="text-lg xl:text-lg font-medium mb-4 text-black">
+                <div className="text-center mb-2">
+                  <p className="text-xs text-portuguese-blue font-bold">Atualizado: {getCurrentMonthYear()}</p>
+                </div>
+
+                <h2 className="text-lg xl:text-lg font-medium mb-2 text-black">
                   Análises de Especialistas & Avaliações
                 </h2>
 
                 <div className="w-20 h-0.5 bg-green-600 mx-auto mb-4"></div>
+
 
                 <p className="text-sm text-black max-w-3xl mx-auto leading-relaxed mb-4">
                   Existem inúmeras casas de apostas em Portugal que oferecem opções de apostas seguras e atractivas. As
@@ -72,9 +77,7 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
                     </div>
                   </div>
                 </div>
-                <div className="mt-6 text-center">
-                  <p className="text-xs text-portuguese-blue font-bold">Atualizado: {getCurrentMonthYear()}</p>
-                </div>
+
               </div>
             </div>
           </div>
@@ -85,20 +88,24 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
       <div className="lg:hidden mb-2">
         <div className="bg-white/70 shadow-lg max-w-[1150px] mx-auto rounded-lg">
           <div className="px-4 py-4 text-center">
-            <h1 className="text-xl md:text-2xl font-bold mb-3 text-portuguese-red uppercase">
-              Melhores <span className="text-portuguese-green">Sites de Apostas</span> Portugueses 2025
+            <h1 className="text-xl md:text-2xl font-bold mb-2 text-portuguese-red uppercase">
+              Melhores <span className="text-portuguese-green">Sites de Apostas</span> Portugueses
             </h1>
 
-            <div className="w-16 h-0.5 bg-green-600 mx-auto mb-4"></div>
+            <div className="mb-2 text-center">
+              <p className="text-xs text-portuguese-blue font-bold">Atualizado: {getCurrentMonthYear()}</p>
+            </div>
 
-            <p className="text-sm md:text-base text-black mb-4 leading-relaxed max-w-2xl mx-auto">
+            <div className="w-16 h-0.5 bg-green-600 mx-auto mb-2"></div>
+
+            {/* <p className="text-sm md:text-base text-black mb-4 leading-relaxed max-w-2xl mx-auto">
               Existem inúmeras casas de apostas em Portugal que oferecem opções de apostas seguras e atractivas. As
               melhores casas de apostas caracterizam-se por plataformas de fácil utilização, probabilidades lucrativas e
               uma vasta gama de opções de apostas.
-            </p>
+            </p> */}
 
             {/* Trust Indicators */}
-            <div className="mt-6">
+            <div className="mt-2">
               <div className="flex justify-center items-center gap-1 sm:gap-3">
                 <div className="flex items-center gap-1 sm:gap-2 text-black px-1 sm:px-2 py-1 flex-shrink-0">
                   <Image src="/flag.png" alt="Logo" width={20} height={20} className="w-5 h-5" />
@@ -114,9 +121,7 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
                 </div>
               </div>
             </div>
-            <div className="mt-4 text-center">
-              <p className="text-xs text-portuguese-blue font-bold">Atualizado: {getCurrentMonthYear()}</p>
-            </div>
+
           </div>
         </div>
       </div>

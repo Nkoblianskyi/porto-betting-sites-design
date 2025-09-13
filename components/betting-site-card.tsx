@@ -66,9 +66,6 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
 
             {/* Rank and Status Badges - positioned absolutely */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
-              <div className="tech-rank px-3 py-1 text-xs font-bold !text-white" style={{ backgroundColor: "#FF0000" }}>
-                #{rank}
-              </div>
               {rank <= 4 && (
                 <div
                   className="tech-badge px-2 sm:px-3 md:px-4 py-1 text-xs font-bold !text-white whitespace-nowrap"
@@ -158,12 +155,6 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
 
               {/* Badges */}
               <div className="absolute top-0 left-0 flex gap-0 z-30">
-                <div
-                  className="tech-rank px-2 py-0.5 text-sm font-bold !text-white"
-                  style={{ backgroundColor: "#FF0000" }}
-                >
-                  #{rank}
-                </div>
                 {rank <= 4 && (
                   <div
                     className="tech-badge px-2 py-0.5 text-xs font-bold !text-white whitespace-nowrap"
@@ -232,12 +223,6 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
           <div className="p-2 relative bg-tech-white">
             {/* Badges */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
-              <div
-                className="tech-rank px-3 py-0.5 text-sm font-bold !text-white"
-                style={{ backgroundColor: "#FF0000" }}
-              >
-                #{rank}
-              </div>
               {rank <= 4 && (
                 <div
                   className="tech-badge px-3 py-1 text-xs font-bold !text-white whitespace-nowrap"

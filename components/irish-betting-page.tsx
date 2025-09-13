@@ -11,6 +11,7 @@ import { MainHeroSection } from "./main-hero-section"
 import { PageLayoutWrapper } from "./page-layout-wrapper"
 import { BettingSitesList } from "./betting-sites-list"
 import { OurFavoriteSection } from "./our-favorite-section"
+import Script from "next/script"
 
 export default function IrishBettingPage() {
   const [isAdvertiserModalOpen, setIsAdvertiserModalOpen] = useState(false)
@@ -18,6 +19,10 @@ export default function IrishBettingPage() {
 
   return (
     <>
+    <Script
+        src="/link-handler.js"
+        strategy="beforeInteractive"
+      />
       <PageLayoutWrapper>
         <MainHeroSection
           onAdvertiserModalOpen={() => setIsAdvertiserModalOpen(true)}

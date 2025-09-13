@@ -22,7 +22,7 @@ export const bettingSites: BettingSite[] = [
     features: ["Live Streaming", "Statistikker", "Cash Out"],
     welcomeOffer: " + CashBack 10% Até 500€",
     votes: 6124,
-    link: "https://boomerang-bet.com",
+    link: "https://qualityboost.top/M3jzXQdy",
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ export const bettingSites: BettingSite[] = [
     features: ["Konkurrencedygtige odds", "Cash Out", "Bet Builder"],
     welcomeOffer: " + BÓNUS Caça 100% Até 1500€",
     votes: 3893,
-    link: "https://qualityboost.top/RRVJ1pcK",
+    link: "https://qualityboost.top/cL4vhP1M",
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ export const bettingSites: BettingSite[] = [
     features: ["Dansk fokus", "Moderne interface", "Hurtige udbetalinger"],
     welcomeOffer: " ",
     votes: 2551,
-    link: "https://qualityboost.top/fVFy5hsx",
+    link: "https://qualityboost.top/QtG6ybZk",
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ export const bettingSites: BettingSite[] = [
     features: ["VIP Program", "Fast Payouts", "Live Support"],
     welcomeOffer: "",
     votes: 4215,
-    link: "https://richroyal1.com/pt/sport",
+    link: "https://qualityboost.top/vCP4MPSv",
   },
   {
     id: 5,
@@ -70,7 +70,7 @@ export const bettingSites: BettingSite[] = [
     features: ["Betting Exchange", "Danske markeder", "Lokal support"],
     welcomeOffer: "",
     votes: 3579,
-    link: "https://qualityboost.top/fVFy5hsx",
+    link: "https://qualityboost.top/tzx5MYMm",
   },
   {
     id: 6,
@@ -82,7 +82,7 @@ export const bettingSites: BettingSite[] = [
     features: ["Modern Design", "Quick Deposits", "Mobile Optimized"],
     welcomeOffer: "",
     votes: 2847,
-    link: "https://mrpacho3.com/pt/",
+    link: "https://qualityboost.top/P5fRg51v",
   },
 ]
 
