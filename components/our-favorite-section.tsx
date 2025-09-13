@@ -49,16 +49,12 @@ export function OurFavoriteSection() {
                   alt={favoriteSite.name}
                   className="w-36 xl:w-44 h-16 xl:h-20 object-contain"
                 />
-                {/* Tech corner accents - Portuguese flag colors */}
-                <div className="absolute -top-1 -left-1 w-2 h-2 bg-portuguese-red"></div>
-                <div className="absolute -top-1 -right-1 w-2 h-2 bg-portuguese-red"></div>
               </div>
             </div>
 
             {/* Rank and Status Badges - positioned absolutely */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
-              <div className="tech-rank px-3 py-1 text-xs font-bold !text-white bg-portuguese-red">#1</div>
-              <div className="tech-badge px-2 sm:px-3 md:px-4 py-1 text-xs font-bold !text-white whitespace-nowrap bg-portuguese-red">
+              <div className="tech-badge px-2 sm:px-3 md:px-4 py-1 text-xs font-bold !text-black whitespace-nowrap bg-tech-gold">
                 TOP BOOKMAKER
               </div>
             </div>
@@ -76,7 +72,7 @@ export function OurFavoriteSection() {
 
             {/* RATING - 12% */}
             <div className="flex-[0_0_12%] px-2 text-center flex flex-col justify-center h-full relative z-10">
-              <div className="text-4xl xl:text-5xl font-bold leading-none mb-1 tech-heading text-portuguese-red">
+              <div className="text-4xl xl:text-5xl font-bold leading-none mb-1 tech-heading text-green-700">
                 {favoriteSite.rating.toFixed(1)}
               </div>
               <div className="text-xs font-bold text-tech-gray-600 tech-subheading">SCORE</div>
@@ -89,7 +85,7 @@ export function OurFavoriteSection() {
               </div>
               <div className="flex justify-center gap-1 mb-2">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 xl:w-5 h-4 xl:h-5 fill-current text-portuguese-red" />
+                  <Star key={i} className="w-4 xl:w-5 h-4 xl:h-5 fill-current text-yellow-400" />
                 ))}
               </div>
               <div className="text-sm text-tech-black font-bold tech-subheading">EXCELENTE</div>
@@ -132,21 +128,18 @@ export function OurFavoriteSection() {
             <div className="grid grid-cols-12 gap-2 items-center relative z-10">
               {/* Logo - 3 колонки */}
               <div className="col-span-3 flex justify-center">
-                <div className="bg-tech-white border-2 border-tech-black p-2 shadow-tech-soft w-full mt-4 relative">
+                <div className="bg-black border-2 border-tech-black p-2 shadow-tech-soft w-full mt-4 relative">
                   <img
                     src={favoriteSite.logo || "/placeholder.svg"}
                     alt={favoriteSite.name}
                     className="w-full h-12 object-contain"
                   />
-                  <div className="absolute -top-1 -left-1 w-1 h-1 bg-portuguese-red"></div>
-                  <div className="absolute -top-1 -right-1 w-1 h-1 bg-portuguese-red"></div>
                 </div>
               </div>
 
               {/* Badges */}
               <div className="absolute top-0 left-0 flex gap-0 z-30">
-                <div className="tech-rank px-2 py-0.5 text-sm font-bold !text-white bg-portuguese-red">#1</div>
-                <div className="tech-badge px-2 py-0.5 text-xs font-bold !text-white whitespace-nowrap bg-portuguese-red">
+                <div className="tech-badge px-2 py-0.5 text-xs font-bold !text-black whitespace-nowrap bg-tech-gold">
                   TOP BOOKMAKER
                 </div>
               </div>
@@ -213,24 +206,21 @@ export function OurFavoriteSection() {
           <div className="p-3 relative bg-tech-white">
             {/* Badges */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
-              <div className="tech-rank px-2 py-0.5 text-sm font-bold !text-white bg-portuguese-red">#1</div>
-              <div className="tech-badge px-1.5 py-0.5 text-xs font-bold !text-white whitespace-nowrap bg-portuguese-red">
+              <div className="tech-badge px-2 py-0.5 text-xs font-bold !text-black whitespace-nowrap bg-portuguese-red">
                 TOP BOOKMAKER
               </div>
             </div>
 
             {/* Content Grid */}
-            <div className="grid grid-cols-3 gap-2 items-center mt-8 relative z-10">
+            <div className="grid grid-cols-2 gap-2 items-center mt-8 relative z-10">
               {/* Logo Column */}
               <div className="flex justify-center">
-                <div className="bg-tech-white border-2 border-tech-black p-2 shadow-tech-soft relative">
+                <div className="bg-black border-2 border-tech-black p-2 shadow-tech-soft relative">
                   <img
                     src={favoriteSite.logo || "/placeholder.svg"}
                     alt={favoriteSite.name}
                     className="h-16 w-auto object-contain"
                   />
-                  <div className="absolute -top-1 -left-1 w-1 h-1 bg-portuguese-red"></div>
-                  <div className="absolute -bottom-1 -right-1 w-1 h-1 bg-portuguese-red"></div>
                 </div>
               </div>
 
@@ -247,18 +237,13 @@ export function OurFavoriteSection() {
                 </div>
               </div>
 
-              {/* Button Column */}
-              <div className="flex justify-center">
-                <Button className="bg-green-600 hover:bg-green-700 text-white border-2 border-green-800 px-2 py-1 text-xs w-full font-bold tech-subheading shadow-lg">
-                  OBTER BÓNUS
-                </Button>
-              </div>
+
             </div>
 
             {/* Rating Row */}
-            <div className="grid grid-cols-2 gap-2 mt-3 pt-2 border-t-2 border-tech-gray-200 relative z-10">
+            <div className="grid grid-cols-3 gap-2 mt-3 pt-2 border-t-2 border-tech-gray-200 relative z-10">
               <div className="text-center">
-                <div className="text-lg font-bold leading-none mb-1 tech-heading text-portuguese-red">
+                <div className="text-lg font-bold leading-none mb-1 tech-heading text-green-700">
                   {favoriteSite.rating.toFixed(1)}
                 </div>
                 <div className="text-xs text-tech-gray-600 font-bold tech-subheading">SCORE</div>
@@ -266,12 +251,19 @@ export function OurFavoriteSection() {
               <div className="text-center">
                 <div className="flex justify-center gap-0.5 mb-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-2.5 h-2.5 fill-current text-portuguese-red" />
+                    <Star key={i} className="w-2.5 h-2.5 fill-current text-yellow-400" />
                   ))}
                 </div>
                 <div className="text-xs text-tech-gray-600 font-bold tech-subheading">
                   ({formatVotes(favoriteSite.votes)})
                 </div>
+              </div>
+
+              {/* Button Column */}
+              <div className="flex justify-center">
+                <Button className="bg-green-600 hover:bg-green-700 text-white border-2 border-green-800 px-2 py-1 text-xs w-full font-bold tech-subheading shadow-lg">
+                  OBTER BÓNUS
+                </Button>
               </div>
             </div>
           </div>

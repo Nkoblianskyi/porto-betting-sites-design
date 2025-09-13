@@ -17,8 +17,8 @@ export function MainSiteFooter() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-4 mb-6 group">
               <div className="relative">
-                <div className="w-16 h-16 bg-tech-gold border-2 border-tech-black flex items-center justify-center shadow-tech-glow group-hover:shadow-tech-red-glow transition-all duration-300">
-                  <Image src="/logo.png" alt="Bandeira Portuguesa" width={32} height={32} />
+                <div className="w-16 h-16 flex items-center justify-center shadow-tech-glow group-hover:shadow-tech-red-glow transition-all duration-300">
+                  <Image src="/logo-2.png" alt="Bandeira Portuguesa" width={32} height={32} />
                 </div>
                 <div className="absolute -top-1 -right-1 w-3 h-3 bg-portuguese-red"></div>
                 <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-portuguese-green"></div>
