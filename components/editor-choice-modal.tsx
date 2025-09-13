@@ -59,7 +59,7 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
         <div className="tech-card overflow-hidden transition-all duration-300 hover:scale-105 flex flex-col w-full max-w-[320px] h-[420px] border-4 border-tech-gold shadow-tech-glow bg-tech-white relative">
           {/* Rank Badge */}
           <div className="absolute top-0 left-0 z-20">
-            <div className="tech-rank px-3 py-1 text-sm font-bold !text-white bg-portuguese-red">#1</div>
+            <div className="tech-rank px-3 py-1 text-sm font-bold !text-black">#1</div>
           </div>
 
           {/* Logo section */}
@@ -75,30 +75,34 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
           <div className="bg-tech-white text-tech-black flex-1 flex flex-col p-4 text-center justify-between min-h-0 relative">
 
 
-            {/* Rating Stars */}
-            <div className="flex justify-center gap-1 mb-4">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-current text-yellow-400" />
-              ))}
+            <div className="flex flex-row items-center justify-center gap-4">
+              {/* Rating Stars */}
+              <div className="flex justify-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-current text-yellow-400" />
+                ))}
+              </div>
+
+              {/* Rating Score */}
+              <div>
+                <span className="font-bold tech-subheading text-lg text-green-700">
+                  {topSite.rating.toFixed(1)}/10
+                </span>
+              </div>
             </div>
 
             {/* Bonus Amount */}
-            <div className="flex-1 flex flex-col justify-center mb-4">
+            <div className="flex-1 flex flex-col justify-center mb-2">
               <div className="text-sm text-tech-gray-600 font-medium mb-2 tech-subheading">BÓNUS BOAS-VINDAS</div>
-              <div className="text-2xl font-black text-tech-black tracking-wider leading-tight tech-heading mb-2">
+              <div className="text-xl font-black text-tech-black tracking-wider leading-tight tech-heading mb-2">
                 {topSite.bonus}
               </div>
-              <div className="text-xl font-bold leading-tight tech-heading text-portuguese-red">
+              <div className="text-xl font-bold leading-tight tech-heading text-black">
                 {topSite.welcomeOffer}
               </div>
             </div>
 
-            {/* Rating Score */}
-            <div className="mb-6">
-              <span className="font-bold tech-subheading text-lg text-green-700">
-                {topSite.rating.toFixed(1)}/10
-              </span>
-            </div>
+
 
             {/* CTA Button */}
             <div>

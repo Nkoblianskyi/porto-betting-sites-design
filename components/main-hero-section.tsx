@@ -33,7 +33,7 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
   return (
     <>
       {/* Desktop Hero */}
-      <div className="hidden lg:block relative overflow-hidden mb-6">
+      <div className="hidden lg:block relative overflow-hidden mb-6 mt-[70px]">
         <div className="bg-white/70 shadow-lg max-w-[1115px] mx-auto rounded-lg">
           <div className="relative px-4 py-4">
             <div className="relative z-10 text-center">
@@ -92,7 +92,7 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
       >
         <div className="bg-white/60 shadow-lg max-w-[1150px] mx-auto rounded-lg">
           <div className="px-4 py-4 text-center">
-            <h1 className="text-sm md:text-2xl font-bold text-portuguese-red uppercase">
+            <h1 className="text-sm md:text-2xl font-bold text-portuguese-red uppercase mt-[40px]">
               Melhores <span className="text-portuguese-green">Sites de Apostas</span> em Portugal
             </h1>
 

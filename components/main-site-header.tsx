@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export function MainSiteHeader() {
   return (
-    <header className="bg-black/50 backdrop-blur-sm sticky top-0 z-40">
+    <header className="bg-black/10  fixed w-full top-0 z-40">
       {/* Mobile Header */}
       <div className="md:hidden">
         <div className="h-12 flex items-center justify-center px-4 relative">
