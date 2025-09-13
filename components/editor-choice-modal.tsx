@@ -51,9 +51,6 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
                 <span className="text-lg font-black tracking-wide tech-heading">ESCOLHA DO EDITOR</span>
                 <Award className="w-5 h-5" />
               </div>
-              {/* Corner accents */}
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-portuguese-red"></div>
-              <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-tech-white"></div>
             </div>
           </div>
         </div>
