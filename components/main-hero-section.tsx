@@ -92,12 +92,12 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
       >
         <div className="bg-white/60 shadow-lg max-w-[1150px] mx-auto rounded-lg">
           <div className="px-4 py-4 text-center">
-            <h1 className="text-xl md:text-2xl font-bold mb-2 text-portuguese-red uppercase">
-              Melhores <span className="text-portuguese-green">Sites de Apostas</span> Portugueses
+            <h1 className="text-sm md:text-2xl font-bold text-portuguese-red uppercase">
+              Melhores <span className="text-portuguese-green">Sites de Apostas</span> em Portugal
             </h1>
 
             <div className="mb-2 text-center">
-              <p className="text-xs text-portuguese-blue font-bold">Atualizado: {getCurrentMonthYear()}</p>
+              <p className="text-xs text-portuguese-green font-bold">{getCurrentMonthYear()}</p>
             </div>
 
             <div className="w-16 h-0.5 bg-green-600 mx-auto mb-2"></div>

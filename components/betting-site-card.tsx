@@ -58,9 +58,6 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
                   alt={site.name}
                   className="w-36 xl:w-44 h-16 xl:h-20 object-contain"
                 />
-                {/* Tech corner accents - flags with #C8102E background */}
-                <div className="absolute -top-1 -left-1 w-2 h-2" style={{ backgroundColor: "#FF0000" }}></div>
-                <div className="absolute -top-1 -right-1 w-2 h-2" style={{ backgroundColor: "#FF0000" }}></div>
               </div>
             </div>
 
@@ -68,8 +65,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
             <div className="absolute top-0 left-0 flex gap-0 z-30">
               {rank <= 4 && (
                 <div
-                  className="tech-badge px-2 sm:px-3 md:px-4 py-1 text-xs font-bold !text-white whitespace-nowrap"
-                  style={{ backgroundColor: "#FF0000" }}
+                  className="tech-badge px-2 sm:px-3 md:px-4 py-1 text-xs font-bold !text-black bg-yellow-500 whitespace-nowrap"
                 >
                   {getRankLabel(rank)}
                 </div>
@@ -147,8 +143,6 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
               <div className="col-span-3 flex justify-center">
                 <div className="bg-black border-2 border-tech-black p-2 shadow-tech-soft w-full mt-4 relative">
                   <img src={site.logo || "/placeholder.svg"} alt={site.name} className="w-full h-12 object-contain" />
-                  <div className="absolute -top-1 -left-1 w-1 h-1" style={{ backgroundColor: "#FF0000" }}></div>
-                  <div className="absolute -top-1 -right-1 w-1 h-1" style={{ backgroundColor: "#FF0000" }}></div>
                 </div>
               </div>
 
@@ -156,8 +150,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
               <div className="absolute top-0 left-0 flex gap-0 z-30">
                 {rank <= 4 && (
                   <div
-                    className="tech-badge px-2 py-0.5 text-xs font-bold !text-white whitespace-nowrap"
-                    style={{ backgroundColor: "#FF0000" }}
+                    className="tech-badge px-2 py-0.5 text-xs font-bold !text-black bg-yellow-500 whitespace-nowrap"
                   >
                     {getRankLabel(rank)}
                   </div>
@@ -224,8 +217,8 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
             <div className="absolute top-0 left-0 flex gap-0 z-30">
               {rank <= 4 && (
                 <div
-                  className="tech-badge px-3 py-1 text-xs font-bold !text-white whitespace-nowrap"
-                  style={{ backgroundColor: "#FF0000" }}
+                  className="tech-badge px-3 py-1 text-xs font-bold !text-black whitespace-nowrap bg-yellow-500"
+                  
                 >
                   {getRankLabel(rank)}
                 </div>
@@ -238,16 +231,14 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
               <div className="flex justify-center">
                 <div className="bg-black border-2 border-tech-black p-2 shadow-tech-soft relative">
                   <img src={site.logo || "/placeholder.svg"} alt={site.name} className="h-14 w-auto object-contain" />
-                  <div className="absolute -top-1 -left-1 w-1 h-1" style={{ backgroundColor: "#FF0000" }}></div>
-                  <div className="absolute -bottom-1 -right-1 w-1 h-1" style={{ backgroundColor: "#FF0000" }}></div>
                 </div>
               </div>
 
               {/* Bonus Column */}
               <div className="text-center">
                 <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">BÓNUS BOAS-VINDAS</div>
-                <div className="text-base font-bold text-tech-black leading-tight mb-1 tech-heading">{site.bonus}</div>
-                <div className="text-base font-bold text-tech-black leading-tight tech-heading">{site.welcomeOffer}</div>
+                <div className="text-xs font-bold text-tech-black leading-tight mb-1 tech-heading">{site.bonus}</div>
+                <div className="text-xs font-bold text-tech-black leading-tight tech-heading">{site.welcomeOffer}</div>
               </div>
             </div>
 
@@ -272,7 +263,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
 
               {/* Button Column */}
               <div className="flex justify-center">
-                <Button className="bg-portuguese-green hover:bg-green-700 text-white border-2 border-portuguese-green px-4 py-2 text-sm w-full font-bold tech-subheading shadow-lg">
+                <Button className="bg-portuguese-green hover:bg-green-700 text-white border-2 border-portuguese-green px-4 py-4 text-xs w-full font-bold tech-subheading shadow-lg">
                   OBTER BÓNUS
                 </Button>
               </div>
