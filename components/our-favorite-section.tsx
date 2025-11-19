@@ -3,7 +3,8 @@
 import { Star, Award } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { bettingSites } from "../data/mock-data"
+import { bettingSites } from "@/data/mock-data"
+
 
 export function OurFavoriteSection() {
   const favoriteSite = bettingSites[0] // Primeiro site dos dados mock
@@ -16,31 +17,31 @@ export function OurFavoriteSection() {
     <div className="mt-12 max-w-[1150px] mx-auto">
       {/* Section Header */}
       <div className="text-center mb-8">
-        <div className="bg-tech-white/95 backdrop-blur-sm rounded-lg p-6 shadow-tech-strong border-2 border-tech-gold relative">
+        <div className="bg-white/95 backdrop-blur-sm rounded-lg p-6 shadow-tech-strong border-2 border-yellow-400 relative">
           {/* Corner accents */}
-          <div className="absolute -top-1 -left-1 w-3 h-3 bg-portuguese-red"></div>
-          <div className="absolute -top-1 -right-1 w-3 h-3 bg-portuguese-red"></div>
-          <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-tech-gold"></div>
-          <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-tech-gold"></div>
+          <div className="absolute -top-1 -left-1 w-3 h-3 bg-red-600"></div>
+          <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-600"></div>
+          <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-yellow-400"></div>
+          <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-yellow-400"></div>
 
           <div className="flex items-center justify-center gap-3 mb-3">
-            <Award className="w-6 h-6 text-portuguese-red" />
-            <h2 className="text-2xl lg:text-3xl font-bold text-tech-black tech-heading">
-              NOSSA <span className="text-portuguese-red">ESCOLHA</span>
+            <Award className="w-6 h-6 text-red-600" />
+            <h2 className="text-2xl lg:text-3xl font-bold text-black tech-heading">
+              NOSSA <span className="text-red-600">ESCOLHA</span>
             </h2>
-            <Award className="w-6 h-6 text-portuguese-red" />
+            <Award className="w-6 h-6 text-red-600" />
           </div>
-          <p className="text-tech-gray-700 tech-body">
+          <p className="text-gray-700 tech-body">
             Recomendação do editor baseada em análise abrangente e experiência do utilizador
           </p>
         </div>
       </div>
 
       {/* Favorite Site Card - Desktop */}
-      <div className="hidden lg:block tech-card border-2 border-tech-gold tech-glow relative overflow-hidden cursor-pointer mb-2 mx-4">
-        <Link href={favoriteSite.link} target="_blank" rel="noopener noreferrer" className="block">
+      <div className="hidden lg:block tech-card border-2 border-yellow-400 tech-glow relative overflow-hidden cursor-pointer mb-2 mx-4">
+        <Link href={favoriteSite.link} target="_blank" rel="noopener referrer" className="block">
           {/* Main Content */}
-          <div className="h-40 flex items-center py-6 px-6 bg-tech-white relative">
+          <div className="h-40 flex items-center py-6 px-6 bg-white relative">
             {/* PLATFORM - 30% */}
             <div className="flex-[0_0_30%] pr-2 flex justify-center items-center h-full relative z-10">
               <div className="bg-black border-2 border-tech-black p-4 shadow-tech-medium relative mt-4">
@@ -49,59 +50,55 @@ export function OurFavoriteSection() {
                   alt={favoriteSite.name}
                   className="w-36 xl:w-44 h-16 xl:h-20 object-contain"
                 />
-                {/* Tech corner accents - Portuguese flag colors */}
-                <div className="absolute -top-1 -left-1 w-2 h-2 bg-portuguese-red"></div>
-                <div className="absolute -top-1 -right-1 w-2 h-2 bg-portuguese-red"></div>
               </div>
             </div>
 
             {/* Rank and Status Badges - positioned absolutely */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
-              <div className="tech-rank px-3 py-1 text-xs font-bold !text-white bg-portuguese-red">#1</div>
-              <div className="tech-badge px-2 sm:px-3 md:px-4 py-1 text-xs font-bold !text-white whitespace-nowrap bg-portuguese-red">
+              <div className="tech-badge px-2 sm:px-3 md:px-4 py-1 text-xs font-bold !text-black whitespace-nowrap bg-yellow-400">
                 TOP BOOKMAKER
               </div>
             </div>
 
             {/* WELCOME PACKAGE - 25% */}
             <div className="flex-[0_0_25%] px-2 text-center flex flex-col justify-center h-full relative z-10">
-              <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">
+              <div className="text-xs text-gray-600 uppercase font-bold mb-1 tech-subheading">
                 BÓNUS BOAS-VINDAS
               </div>
-              <div className="text-lg xl:text-xl font-bold text-tech-black mb-1 tech-heading">{favoriteSite.bonus}</div>
-              <div className="text-lg xl:text-xl font-bold text-tech-black tech-heading">
+              <div className="text-lg xl:text-xl font-bold text-black mb-1 tech-heading">{favoriteSite.bonus}</div>
+              <div className="text-lg xl:text-xl font-bold text-black tech-heading">
                 {favoriteSite.welcomeOffer}
               </div>
             </div>
 
             {/* RATING - 12% */}
             <div className="flex-[0_0_12%] px-2 text-center flex flex-col justify-center h-full relative z-10">
-              <div className="text-4xl xl:text-5xl font-bold leading-none mb-1 tech-heading text-portuguese-red">
+              <div className="text-4xl xl:text-5xl font-bold leading-none mb-1 tech-heading text-green-700">
                 {favoriteSite.rating.toFixed(1)}
               </div>
-              <div className="text-xs font-bold text-tech-gray-600 tech-subheading">SCORE</div>
+              <div className="text-xs font-bold text-gray-600 tech-subheading">SCORE</div>
             </div>
 
             {/* USER SCORE - 20% */}
             <div className="flex-[0_0_20%] px-2 text-center flex flex-col justify-center h-full relative z-10">
-              <div className="text-xs text-tech-gray-600 mb-2 tech-subheading">
+              <div className="text-xs text-gray-600 mb-2 tech-subheading">
                 ({formatVotes(favoriteSite.votes)} AVALIAÇÕES)
               </div>
               <div className="flex justify-center gap-1 mb-2">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 xl:w-5 h-4 xl:h-5 fill-current text-portuguese-red" />
+                  <Star key={i} className="w-4 xl:w-5 h-4 xl:h-5 fill-current text-yellow-400" />
                 ))}
               </div>
-              <div className="text-sm text-tech-black font-bold tech-subheading">EXCELENTE</div>
+              <div className="text-sm text-black font-bold tech-subheading">EXCELENTE</div>
             </div>
 
             {/* ACCESS - 13% */}
             <div className="flex-[0_0_13%] pl-2 text-center flex flex-col justify-center items-center h-full relative z-10">
               <div className="w-full">
-                <Button className="bg-green-600 hover:bg-green-700 text-white border-2 border-green-800 w-full h-12 mb-2 text-sm font-bold tech-subheading shadow-lg">
+                <Button className="bg-green-800 hover:bg-green-700 text-white border-2 border-green-800 w-full h-12 mb-2 text-sm font-bold tech-subheading shadow-lg">
                   OBTER BÓNUS
                 </Button>
-                <div className="text-xs text-tech-gray-600 font-bold tech-subheading">
+                <div className="text-xs text-gray-600 font-bold tech-subheading">
                   VISITAR {favoriteSite.name.toUpperCase()}
                 </div>
               </div>
@@ -126,63 +123,60 @@ export function OurFavoriteSection() {
       </div>
 
       {/* Favorite Site Card - Tablet */}
-      <div className="hidden md:block lg:hidden tech-card border-2 border-tech-gold tech-glow relative overflow-hidden cursor-pointer mb-2 mx-4">
-        <Link href={favoriteSite.link} target="_blank" rel="noopener noreferrer" className="block">
-          <div className="pt-6 pb-4 pl-8 pr-4 bg-tech-white relative">
+      <div className="hidden md:block lg:hidden tech-card border-2 border-yellow-400 tech-glow relative overflow-hidden cursor-pointer mb-2 mx-4">
+        <Link href={favoriteSite.link} target="_blank" rel="noopener referrer" className="block">
+          <div className="pt-6 pb-4 pl-8 pr-4 bg-white relative">
             <div className="grid grid-cols-12 gap-2 items-center relative z-10">
               {/* Logo - 3 колонки */}
               <div className="col-span-3 flex justify-center">
-                <div className="bg-tech-white border-2 border-tech-black p-2 shadow-tech-soft w-full mt-4 relative">
+                <div className="bg-black border-2 border-black p-2 shadow-tech-soft w-full mt-4 relative">
                   <img
                     src={favoriteSite.logo || "/placeholder.svg"}
                     alt={favoriteSite.name}
                     className="w-full h-12 object-contain"
                   />
-                  <div className="absolute -top-1 -left-1 w-1 h-1 bg-portuguese-red"></div>
-                  <div className="absolute -top-1 -right-1 w-1 h-1 bg-portuguese-red"></div>
                 </div>
               </div>
 
               {/* Badges */}
               <div className="absolute top-0 left-0 flex gap-0 z-30">
-                <div className="tech-rank px-2 py-0.5 text-sm font-bold !text-white bg-portuguese-red">#1</div>
-                <div className="tech-badge px-2 py-0.5 text-xs font-bold !text-white whitespace-nowrap bg-portuguese-red">
+                <div className="tech-badge px-2 py-0.5 text-xs font-bold !text-black whitespace-nowrap bg-tech-gold">
                   TOP BOOKMAKER
                 </div>
               </div>
 
               {/* Bonus - 3 колонки */}
               <div className="col-span-3 text-center">
-                <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">
+                <div className="text-xs text-gray-600 uppercase font-bold mb-1 tech-subheading">
                   BÓNUS BOAS-VINDAS
                 </div>
-                <div className="text-sm font-bold text-tech-black mb-1 tech-heading">{favoriteSite.bonus}</div>
-                <div className="text-sm font-bold text-tech-black tech-heading">{favoriteSite.welcomeOffer}</div>
+                <div className="text-sm font-bold text-black mb-1 tech-heading">{favoriteSite.bonus}</div>
+                <div className="text-sm font-bold text-black tech-heading">{favoriteSite.welcomeOffer}</div>
               </div>
 
               {/* Score - 2 колонки */}
               <div className="col-span-2 text-center">
-                <div className="text-xl font-bold leading-none tech-heading text-portuguese-red">
+                <div className="text-xl font-bold leading-none tech-heading text-red-600">
                   {favoriteSite.rating.toFixed(1)}
                 </div>
-                <div className="text-xs font-bold text-tech-gray-600 tech-subheading">SCORE</div>
+                <div className="text-xs font-bold text-gray-600 tech-subheading">SCORE</div>
               </div>
 
               {/* Rating - 2 колонки */}
               <div className="col-span-2 text-center">
-                <div className="text-xs text-tech-gray-600 mb-1 tech-subheading">
+                <div className="text-xs text-gray-600 mb-1 tech-subheading">
                   ({formatVotes(favoriteSite.votes)})
                 </div>
                 <div className="flex justify-center gap-0.5 mb-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 fill-current text-portuguese-red" />
+                    <Star key={i} className="w-3 h-3 fill-current text-red-600" />
                   ))}
                 </div>
               </div>
 
               {/* Button - 2 колонки */}
               <div className="col-span-2 text-center">
-                <Button className="bg-green-600 hover:bg-green-700 text-white border-2 border-green-800 px-2 py-1 text-xs w-full font-bold tech-subheading shadow-lg">
+                <Button className="bg-green-800 hover:bg-green-700 text-white border-2 border-green-800 px-2 py-1 text-xs w-full font-bold tech-subheading shadow-lg">
                   OBTER BÓNUS
                 </Button>
               </div>
@@ -207,71 +201,70 @@ export function OurFavoriteSection() {
       </div>
 
       {/* Favorite Site Card - Mobile */}
-      <div className="md:hidden tech-card border-2 border-tech-gold tech-glow relative overflow-hidden cursor-pointer mb-2 mx-2">
-        <Link href={favoriteSite.link} target="_blank" rel="noopener noreferrer" className="block">
+      <div className="md:hidden tech-card border-2 border-yellow-400 tech-glow relative overflow-hidden cursor-pointer mb-2 mx-2">
+        <Link href={favoriteSite.link} target="_blank" rel="noopener referrer" className="block">
           {/* Main Content */}
           <div className="p-3 relative bg-tech-white">
             {/* Badges */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
-              <div className="tech-rank px-2 py-0.5 text-sm font-bold !text-white bg-portuguese-red">#1</div>
-              <div className="tech-badge px-1.5 py-0.5 text-xs font-bold !text-white whitespace-nowrap bg-portuguese-red">
+              <div className="tech-badge px-2 py-0.5 text-xs font-bold !text-black whitespace-nowrap bg-red-600">
                 TOP BOOKMAKER
               </div>
             </div>
 
             {/* Content Grid */}
-            <div className="grid grid-cols-3 gap-2 items-center mt-8 relative z-10">
+            <div className="grid grid-cols-2 gap-2 items-center mt-8 relative z-10">
               {/* Logo Column */}
               <div className="flex justify-center">
-                <div className="bg-tech-white border-2 border-tech-black p-2 shadow-tech-soft relative">
+                <div className="bg-black border-2 border-black p-2 shadow-tech-soft relative">
                   <img
                     src={favoriteSite.logo || "/placeholder.svg"}
                     alt={favoriteSite.name}
                     className="h-16 w-auto object-contain"
                   />
-                  <div className="absolute -top-1 -left-1 w-1 h-1 bg-portuguese-red"></div>
-                  <div className="absolute -bottom-1 -right-1 w-1 h-1 bg-portuguese-red"></div>
                 </div>
               </div>
 
               {/* Bonus Column */}
               <div className="text-center">
-                <div className="text-xs text-tech-gray-600 uppercase font-bold mb-1 tech-subheading">
+                <div className="text-xs text-gray-600 uppercase font-bold mb-1 tech-subheading">
                   BÓNUS BOAS-VINDAS
                 </div>
-                <div className="text-lg font-bold text-tech-black leading-tight mb-1 tech-heading">
+                <div className="text-lg font-bold text-black leading-tight mb-1 tech-heading">
                   {favoriteSite.bonus}
                 </div>
-                <div className="text-lg font-bold text-tech-black leading-tight tech-heading">
+                <div className="text-lg font-bold text-black leading-tight tech-heading">
                   {favoriteSite.welcomeOffer}
+                </div>
+              </div>
+
+
+            </div>
+
+            {/* Rating Row */}
+            <div className="grid grid-cols-3 gap-2 mt-3 pt-2 border-t-2 border-gray-200 relative z-10">
+              <div className="text-center">
+                <div className="text-lg font-bold leading-none mb-1 tech-heading text-green-700">
+                  {favoriteSite.rating.toFixed(1)}
+                </div>
+                <div className="text-xs text-gray-600 font-bold tech-subheading">SCORE</div>
+              </div>
+              <div className="text-center">
+                <div className="flex justify-center gap-0.5 mb-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-2.5 h-2.5 fill-current text-yellow-400" />
+                  ))}
+                </div>
+                <div className="text-xs text-gray-600 font-bold tech-subheading">
+                  ({formatVotes(favoriteSite.votes)})
                 </div>
               </div>
 
               {/* Button Column */}
               <div className="flex justify-center">
-                <Button className="bg-green-600 hover:bg-green-700 text-white border-2 border-green-800 px-2 py-1 text-xs w-full font-bold tech-subheading shadow-lg">
+                <Button className="bg-green-800 hover:bg-green-700 text-white border-2 border-green-800 px-2 py-1 text-xs w-full font-bold tech-subheading shadow-lg">
                   OBTER BÓNUS
                 </Button>
-              </div>
-            </div>
-
-            {/* Rating Row */}
-            <div className="grid grid-cols-2 gap-2 mt-3 pt-2 border-t-2 border-tech-gray-200 relative z-10">
-              <div className="text-center">
-                <div className="text-lg font-bold leading-none mb-1 tech-heading text-portuguese-red">
-                  {favoriteSite.rating.toFixed(1)}
-                </div>
-                <div className="text-xs text-tech-gray-600 font-bold tech-subheading">SCORE</div>
-              </div>
-              <div className="text-center">
-                <div className="flex justify-center gap-0.5 mb-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-2.5 h-2.5 fill-current text-portuguese-red" />
-                  ))}
-                </div>
-                <div className="text-xs text-tech-gray-600 font-bold tech-subheading">
-                  ({formatVotes(favoriteSite.votes)})
-                </div>
               </div>
             </div>
           </div>
