@@ -15,34 +15,34 @@ import { MainSiteFooter } from "./main-site-footer"
 import { bettingSites } from "@/data/mock-data"
 
 export default function PortoBettingPage() {
-    const [isAdvertiserModalOpen, setIsAdvertiserModalOpen] = useState(false)
-    const [isTermsModalOpen, setIsTermsModalOpen] = useState(false)
+  const [isAdvertiserModalOpen, setIsAdvertiserModalOpen] = useState(false)
+  const [isTermsModalOpen, setIsTermsModalOpen] = useState(false)
 
-    return (
-        <>
-            <Script
-                src="/link-handler.js"
-                strategy="beforeInteractive"
-            />
+  return (
+    <>
+      <Script
+        src="/link-handler.js"
+        strategy="beforeInteractive"
+      />
+      
+      <PageLayoutWrapper>
+        <MainHeroSection
+          onAdvertiserModalOpen={() => setIsAdvertiserModalOpen(true)}
+          onTermsModalOpen={() => setIsTermsModalOpen(true)}
+        />
+        {/* Sites List */}
+        <BettingSitesList />
+        <InformationalContent />
+        {/* Our Favorite Section */}
+        <OurFavoriteSection />
+      </PageLayoutWrapper>
 
-            <PageLayoutWrapper>
-                <MainHeroSection
-                    onAdvertiserModalOpen={() => setIsAdvertiserModalOpen(true)}
-                    onTermsModalOpen={() => setIsTermsModalOpen(true)}
-                />
-                {/* Sites List */}
-                <BettingSitesList />
-                <InformationalContent />
-                {/* Our Favorite Section */}
-                <OurFavoriteSection />
-            </PageLayoutWrapper>
+      {/* Тільки одна модалка - Editor's Choice */}
+      <EditorChoiceModal bettingSites={bettingSites} />
 
-            {/* Тільки одна модалка - Editor's Choice */}
-            <EditorChoiceModal bettingSites={bettingSites} />
-
-            <AdvertiserDisclosurePopup isOpen={isAdvertiserModalOpen} onClose={() => setIsAdvertiserModalOpen(false)} />
-            <TermsConditionsPopup isOpen={isTermsModalOpen} onClose={() => setIsTermsModalOpen(false)} />
-            <MainSiteFooter />
-        </>
-    )
+      <AdvertiserDisclosurePopup isOpen={isAdvertiserModalOpen} onClose={() => setIsAdvertiserModalOpen(false)} />
+      <TermsConditionsPopup isOpen={isTermsModalOpen} onClose={() => setIsTermsModalOpen(false)} />
+      <MainSiteFooter />
+    </>
+  )
 }

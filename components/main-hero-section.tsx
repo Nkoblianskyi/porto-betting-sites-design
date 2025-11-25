@@ -40,11 +40,11 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
               {/* Main Heading */}
               <div className="mb-6">
                 <h1 className="text-2xl xl:text-3xl font-bold mb-3 leading-tight text-red-600 uppercase">
-                  Melhores <span className="text-portuguese-green">Sites de Apostas</span> Portugueses
+                  Melhores <span className="text-green-600">Sites de Apostas</span> Portugueses
                 </h1>
 
                 <div className="text-center mb-2">
-                  <p className="text-xs text-portuguese-blue font-bold">Atualizado: {getCurrentMonthYear()}</p>
+                  <p className="text-xs text-blue-600 font-bold">Atualizado: {getCurrentMonthYear()}</p>
                 </div>
 
                 <h2 className="text-lg xl:text-lg font-medium mb-2 text-black">

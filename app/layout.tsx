@@ -40,9 +40,7 @@ export default function RootLayout({
           <div className="absolute inset-0 bg-black/40"></div>
 
           <div className="relative z-10">
-            <MainSiteHeader />
             <main>{children}</main>
-            <MainSiteFooter />
           </div>
         </div>
       </body>

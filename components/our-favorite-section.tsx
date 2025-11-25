@@ -44,7 +44,7 @@ export function OurFavoriteSection() {
           <div className="h-40 flex items-center py-6 px-6 bg-white relative">
             {/* PLATFORM - 30% */}
             <div className="flex-[0_0_30%] pr-2 flex justify-center items-center h-full relative z-10">
-              <div className="bg-black border-2 border-tech-black p-4 shadow-tech-medium relative mt-4">
+              <div className="bg-black border-2 border-black p-4 shadow-tech-medium relative mt-4">
                 <img
                   src={favoriteSite.logo || "/placeholder.svg"}
                   alt={favoriteSite.name}
@@ -65,8 +65,8 @@ export function OurFavoriteSection() {
               <div className="text-xs text-gray-600 uppercase font-bold mb-1 tech-subheading">
                 BÓNUS BOAS-VINDAS
               </div>
-              <div className="text-lg xl:text-xl font-bold text-black mb-1 tech-heading">{favoriteSite.bonus}</div>
-              <div className="text-lg xl:text-xl font-bold text-black tech-heading">
+              <div className="text-lg font-bold text-black mb-1 tech-heading">{favoriteSite.bonus}</div>
+              <div className="text-lg font-bold text-black tech-heading">
                 {favoriteSite.welcomeOffer}
               </div>
             </div>
@@ -140,7 +140,7 @@ export function OurFavoriteSection() {
 
               {/* Badges */}
               <div className="absolute top-0 left-0 flex gap-0 z-30">
-                <div className="tech-badge px-2 py-0.5 text-xs font-bold !text-black whitespace-nowrap bg-tech-gold">
+                <div className="tech-badge px-2 py-0.5 text-xs font-bold !text-black whitespace-nowrap bg-yellow-400">
                   TOP BOOKMAKER
                 </div>
               </div>
@@ -204,7 +204,7 @@ export function OurFavoriteSection() {
       <div className="md:hidden tech-card border-2 border-yellow-400 tech-glow relative overflow-hidden cursor-pointer mb-2 mx-2">
         <Link href={favoriteSite.link} target="_blank" rel="noopener referrer" className="block">
           {/* Main Content */}
-          <div className="p-3 relative bg-tech-white">
+          <div className="p-3 relative bg-white">
             {/* Badges */}
             <div className="absolute top-0 left-0 flex gap-0 z-30">
               <div className="tech-badge px-2 py-0.5 text-xs font-bold !text-black whitespace-nowrap bg-red-600">
