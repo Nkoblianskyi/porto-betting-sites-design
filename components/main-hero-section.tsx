@@ -40,7 +40,7 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
               {/* Main Heading */}
               <div className="mb-6">
                 <h1 className="text-2xl xl:text-3xl font-bold mb-3 leading-tight text-red-600 uppercase">
-                  Melhores <span className="text-green-600">Sites de Apostas</span> Portugueses
+                  Melhores <span className="text-green-700">Sites de Apostas</span> Portugueses
                 </h1>
 
                 <div className="text-center mb-2">
@@ -93,7 +93,7 @@ export function MainHeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: Her
         <div className="bg-white/60 shadow-lg max-w-[1150px] mx-auto rounded-lg">
           <div className="px-4 py-2 text-center">
             <h1 className="text-sm md:text-2xl font-bold text-red-600 uppercase mt-[40px]">
-              Melhores <span className="text-green-600">Sites de Apostas</span> em Portugal
+              Melhores <span className="text-green-700">Sites de Apostas</span> em Portugal
             </h1>
 
             <div className="mb-1 text-center">
