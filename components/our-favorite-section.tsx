@@ -14,7 +14,7 @@ export function OurFavoriteSection() {
   }
 
   return (
-    <div className="mt-12 max-w-[1150px] mx-auto">
+    <div className="mt-12 max-w-[1200px] mx-auto">
       {/* Section Header */}
       <div className="text-center mb-8">
         <div className="bg-white/95 backdrop-blur-sm rounded-lg p-6 shadow-tech-strong border-2 border-yellow-400 relative">
@@ -38,7 +38,7 @@ export function OurFavoriteSection() {
       </div>
 
       {/* Favorite Site Card - Desktop */}
-      <div className="hidden lg:block tech-card border-2 border-yellow-400 tech-glow relative overflow-hidden cursor-pointer mb-2 mx-4">
+      <div className="w-full hidden lg:block tech-card border-2 border-yellow-400 tech-glow relative overflow-hidden cursor-pointer mb-2 mx-auto">
         <Link href={favoriteSite.link} target="_blank" rel="noopener referrer" className="block">
           {/* Main Content */}
           <div className="h-40 flex items-center py-6 px-6 bg-white relative">
