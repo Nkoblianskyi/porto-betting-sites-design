@@ -109,7 +109,7 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
                 200% até 10.000€
               </div>
               <div className="text-base font-bold leading-tight tech-heading text-black">
-                + Aposta Grátis Onlywin 50% até 1000 EUR
+                + Aposta Grátis Onlywin 50% até 1000€
               </div>
 
             </div>
